@@ -1,5 +1,7 @@
+
+
 header{
-  background-color: red;
+  background-color: darkgreen;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -8,13 +10,18 @@ header{
 }
 
 header > h1{
-  background-color: green;
+  background-color: black;
   width: 30%;
   text-align: end;
+  color: white;
+  display: inline-block;
+  padding: 2px;
+  border: solid 2px white;
+  
 }
 
 nav{
-  background-color: orange;
+  background-color: darkgreen;
   width: 50%;
   display:flex;
   justify-content: space-around;
@@ -22,8 +29,9 @@ nav{
 }
 
 a{
-  background-color: purple;
+  background-color: black;
   border: 2px solid white;
+  color: white;
 }
 
 @media screen and (max-width:600px) {
@@ -38,28 +46,69 @@ a{
   nav{
     width: 100%;
   }
+  #about > aside{
+    width: 25%;
+  }
 }
-
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  height: 75px;
+  background-size: 100%;
+  color:white;
+}
 main{
   height: 500px;
   background-color: gray;
 }
+/*CSS for the About Me section*/
+#about{
+  background-color: pink;
+  height: 50px;
+  display: flex;
+
+}
+#about > aside{
+  background-color:blue;
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+#about > aside > h1{
+  background-color: aquamarine;
+  border-right: blue solid 2px;
+}
+#about-me-paragrph{
+  background-color: brown;
+  border-color: gray;
+  width: 75%;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+#about-me-paragraph > p{
+  width:100%;
+}
+
+/*CSS for the work section*/
 #work{
   background-color: green;
   height: 300px;
   display: flex;
+  border: white solid 2px;
 }
 
 #work > aside{
-  background-color: red;
+  background-color: black;
   width: 25%;
   display: flex;
   justify-content: end;
 
 }
 #work > aside > h1{
-  background-color: gray;
-  border-right: blue solid 2px;
+  background-color: black;
+  border-right: darkgreen solid 2px;
+  color:white
 }
 
 #projects{
@@ -69,15 +118,43 @@ main{
   flex-direction: column;
 }
 #projects > a{
-  height: 40%
+  height: 40%;
+  background-image: url(../images/02-hero-bg.jpg);
+  color:white;
+  background-size: 100%;
+}
+#projects > a:hover {
+  background-size: 500%;
+  color:black;
 }
 
 #sub-projects{
-  background-color: orange;
+  background-color: darkgreen;
   height: 60%;
   display:flex;
   flex-wrap: wrap;
 }
 #sub-projects > a{
   width: 45%;
+  background-image: url(../images/02-hero-bg.jpg);
+  color:black;
+}
+#sub-projects > a:hover {
+  background-size: 300%;
+  color: white;
+}
+/*CSS for Contacts*/
+#contact{
+  background-color:black;
+  height: 20px;
+  display: flex;
+  border: white solid 2px;
+}
+#contact > aside{
+  background-color: black;
+  width: 25%;
+  display: flex;
+  justify-content: end;
+  color:white;
+  border-right: darkgreen;
 }
