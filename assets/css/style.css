@@ -46,9 +46,6 @@ a{
   nav{
     width: 100%;
   }
-  #about > aside{
-    width: 25%;
-  }
 }
 .hero-banner {
   background-image: url("../images/02-hero-bg.jpg");
@@ -62,21 +59,23 @@ main{
 }
 /*CSS for the About Me section*/
 #about{
-  background-color: pink;
+  background-color: black;
+  color: white;
   height: 50px;
   display: flex;
 
 }
 #about > aside{
-  background-color:blue;
+  background-color:black;
   width: 25%;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
 }
 #about > aside > h1{
-  background-color: aquamarine;
-  border-right: blue solid 2px;
+  background-color: black;
+  color: white;
+  border-right: white solid 2px;
 }
 #about-me-paragrph{
   background-color: brown;
